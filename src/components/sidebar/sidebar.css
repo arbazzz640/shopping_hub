@@ -1,0 +1,86 @@
+.mt-16{
+    margin-top: 16px;
+}
+.mr-6{
+    margin-right: 6px;
+}
+.txt_uppercase{
+    text-transform: uppercase;
+}
+.sidebar{
+    width: 260px;
+    background-color: #e0e0e0;
+    height: calc(100vh - 55px);
+    overflow: auto;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.selct_catg , .sidebar .asc_des{
+    width: calc(100% - 30px);
+    margin: auto;
+}
+.cat_heading{
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.ui.selection.dropdown{
+    min-width: unset;
+    min-width: 200px;
+    max-width: 200px;
+}
+.dropdown.icon{
+    border: none;
+}
+input.search , div.text{
+    cursor: pointer !important;
+}
+.sidebar .selct_catg span.text,
+.sidebar .selct_catg .divider{
+    text-transform: capitalize;
+}
+.sidebar .asc_des{
+    margin-top: 20px;
+}
+.sidebar .asc_des .asc_value{
+    margin-bottom: 10px;
+}
+.sidebar .asc_des .asc_des_lbl
+.sidebar .price_range_label{
+    font-size: 15px;
+    color: #424242;
+    position: relative;
+    top: -1px;
+}
+.sidebar .remove_filter_btn{
+    background-color: var(--button-bg-color);
+    color: #424242;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    margin-top: 16px;
+    letter-spacing: 0.7px;
+    transition: 0.5s all linear;
+}
+.sidebar .remove_filter_btn:hover{
+    background-color: #a2adcc;
+    color: #fff;
+    font-weight: 600;
+}
+.cur_point{
+    cursor: pointer;
+}
+.fast_delivery , .out_of_stock{
+    position: relative;
+    top: 1px;
+}
+.sidebar .sel_cat_dropdown{
+    max-width: unset !important;
+}
+@media screen and (max-width: 1024px){
+    .sidebar{
+        display: none;
+    }
+}

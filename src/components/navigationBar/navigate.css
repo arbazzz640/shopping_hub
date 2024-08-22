@@ -1,0 +1,128 @@
+.navigate_menu{
+    background-color: var(--light-color);
+    height: 50px;
+    display: flex;
+    column-gap: 20px;
+    /* justify-content: flex-end; */
+    align-items: center;
+    padding-inline: 5%;
+}
+.navigate_menu .menu_left{
+    width: 27%;
+    display: flex;
+    column-gap: 30px;
+}
+.navigate_menu .logo a {
+    font-size: 20px;
+    color: #1a1313;
+}
+.navigate_menu .menu_med{
+    height: 32px;
+    width: 40%;
+    display: flex;
+    height: calc(100% - 12px);
+    border: 1px solid #e0e0e0;
+    outline: none;
+    border-radius: 6px;
+}
+.navigate_menu .menu_med input{
+    width: calc(100% - 50px);
+    background-color: #fff;
+    height: 100%;
+    border: none;
+    outline: none;
+    display: block;
+    margin: auto;
+    padding-inline: 10px;
+    border-radius: 0 6px 6px 0;
+    order: 2;
+}
+.navigate_menu .menu_med .search_icon_div{
+    width: 50px;
+    background-color: #fff;
+    border-radius: 6px 0 0 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 1;
+}
+.navigate_menu .menu_med .search_icon_div .search_icon{
+    font-size: 20px;
+    cursor: pointer;
+    color: #d1d1d1;
+}
+.navigate_menu .menu_med input:focus + .search_icon_div .search_icon {
+    color: #424242;
+}
+.menu_med input:focus + .search_icon_div .search_icon{
+    
+}
+.navigate_menu .menu_right{
+    /* width: 20%; */
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 20px;
+    align-items: center;
+    margin-left: auto;
+    flex: 1;
+}
+.navigate_menu .menu_right .cart_parent{
+    position: relative;
+    top: 4px;
+    margin-bottom: 0;
+}
+.navigate_menu .menu_right .cart_icon{
+    font-size: 25px;
+    position: relative;
+    /* top: 2px; */
+    color: #8f8f8f;
+}
+.navigate_menu .menu_right .cart{
+    font-weight: 300;
+    font-size: 14px;
+    position: relative;
+    color: rgba(0, 0, 0, 0.87);
+    /* top: -4px; */
+}
+.navigate_menu .menu_right .cart_count{
+    position: absolute;
+    top: -13px;
+    left: 8px;
+    font-size: 18px;
+    color: #ff7043;
+}
+.navigate_menu .menu_right .shortlist_parent{
+    position: relative;
+    top: -2px;
+    margin-bottom: 0;
+}
+.navigate_menu .menu_right .shortlist_icon{
+    font-size: 20px;
+    position: relative;
+    top: 6px;
+    color: #8f8f8f;
+    cursor: pointer;
+}
+.navigate_menu .menu_right .shortlist{
+    font-size: 14px;
+    font-weight: 300;
+    cursor: pointer;
+   color: rgba(0, 0, 0, 0.87); ;
+}
+.navigate_menu .menu_right .shortlist:hover{
+    text-decoration: 1px #1a1aa7 underline;
+    
+}
+.navigate_menu .menu_right .reg_login{
+    display: flex;
+    column-gap: 10px;
+}
+.navigate_menu .menu_right .reg_login :is(.login_txt , .reg_txt){
+    color: #424242;
+}
+.navigate_menu .menu_right .reg_login .small_divider{
+    width: 1px;
+    background-color: #424242;
+    display: inline-block;
+}
